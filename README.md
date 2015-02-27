@@ -1,7 +1,7 @@
 # Проект «Pink»
 
 * Студент: [Ольга Глазунова](https://htmlacademy.ru/profile/id31210).
-* Наставник: `Unknown`.
+* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 --
 
