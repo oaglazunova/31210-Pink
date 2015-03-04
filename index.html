@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Pink</title>
   <!-- <link rel="stylesheet" href="css/style.css"> -->
- 	<meta name="viewport" content="width=320">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 </head>
 
 <body>
@@ -14,8 +15,8 @@
 
       <header class="header">
         <div class="container  clearfix">
-          <a class="application-name">PINK</a>
-          <a class="menu-icon" href="#"><img class="menu" src="#" alt="Menu"></a>
+          <a class="application-name" href="#">PINK</a>
+          <a class="menu-icon" href="#"><span class="icon-menu"></span></a>
         </div>  
       </header>
 	  
@@ -26,25 +27,25 @@
 		
 		
 		
-			<div class="promo-block">
+			<div class="page-content__promo-block">
 				<span class="slogan">Взгляните на жизнь иначе!</span>
 			</div>
 
 
 
-            <div class="download-options">
+            <div class="page-content__download-options">
 				<a class="btn--download">Скачать приложение</a>
 				<ul>
-					<li><img class="logo-op  logo--apple" src="#" alt="Apple"></li>
-					<li><img class="logo-op  logo--android" src="#" alt="Android"></li>
-					<li><img class="logo-op  logo--windows" src="#" alt="Windows"></li>
+					<li><img class="logo-op  logo--apple" src="#" alt="Apple">Apple</li>
+					<li><img class="logo-op  logo--android" src="#" alt="Android">Android</li>
+					<li><img class="logo-op  logo--windows" src="#" alt="Windows">Windows</li>
 				</ul>
 				<p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
 			</div>
 			 
 			 
 			 
-			<div class="features">
+			<div class="page-content__features">
 				<p class="text--big">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
 				<div class="features__text-block">
 				  <p class="text--header">Поднимает настроение</p>
@@ -62,43 +63,46 @@
         
 		
 		
-			<div class="user-reviews">
+			<div class="page-content__user-reviews">
 			  <p class="text--header">Николай Петров</p>
 			  <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 			  <div class="paginator">
-				<a class="page-btn  page-btn--active" href="#"></a>
-				<a class="page-btn" href="#"></a>
-				<a class="page-btn" href="#"></a>
+				<a class="paginator__btn  paginator__btn--active" href="#"></a>
+				<a class="paginator__btn" href="#"></a>
+				<a class="paginator__btn" href="#"></a>
 			  </div> 
 			</div>
 			
 			
 			
-			<div class="packages-info">
-				<div class="package">
-					<a class="package-name" href="#">Стандарт</a>
-					<span class="price">3,99 USD</span>
-				</div>
-				<ul>
-					<li>
-						<a class="package-option  package-option--available">Розовый фильтр</a>
-					</li>
-					<li>
-						<a class="package-option  package-option--available">Смайлики</a>
-					</li>
-					<li>
-						<a class="package-option  package-option--absent">Комментарии</a>
-					</li>
-				</ul>
+			<div class="page-content__packages-info">
+			    <table class="package">
+			        <caption>
+                        <a class="package-name" href="#">Стандарт</a></br>
+					    <span class="price">3,99 USD</span>
+                    </caption>
+                    <tr>
+                        <td><a class="package-option  package-option--available">Розовый фильтр</a></td>
+                        <td><span class="icon-check"></span></td>
+                    </tr>
+                    <tr>
+                        <td><a class="package-option  package-option--available">Смайлики</a></td>
+                        <td><span class="icon-check"></span></td>
+                    </tr>
+                    <tr>
+                        <td><a class="package-option  package-option--absent">Комментарии</a></td>
+                        <td><span class="icon-cancel"></span></td>
+                    </tr>
+			    </table>
 				<div class="paginator">
-					<a class="page-btn" href="#"></a>
-					<a class="page-btn  page-btn--active" href="#"></a>
-					<a class="page-btn" href="#"></a>
-				</div> 
+                    <a class="paginator__btn  paginator__btn--active" href="#"></a>
+                    <a class="paginator__btn" href="#"></a>
+                    <a class="paginator__btn" href="#"></a>
+			    </div> 
 			</div>
 			
 			
-			<div class="contacts">
+			<footer class="footer">
 				<p class="text--big">Остались вопросы? Свяжитесь с нами!</p>
 				<div class="contacts__phone">
 					<p class="text--header">Звоните:</p>
@@ -112,7 +116,7 @@
 					<p class="text--header">Приезжайте в гости:</p>
 					<p class="text--contacts">Санкт-Петербург, Невский проспект, д. 20</p>
 				</div>
-				<a class="map" href="#"><img src="#" alt="Map"></a>
+				<div id="map"></div>
 			</div>
 		
 		
