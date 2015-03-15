@@ -8,6 +8,7 @@
   <title>HTML Academy: Pink</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -19,9 +20,9 @@
   <header class="page-header">
     <div class="page-header__inner">
       <a class="page-header__logo-link" href="#">PINK</a>
-      <a class="page-header__menu-toggler" id="menu-toggler" href="#"><span></span></a>
       <ul class="main-nav">
       </ul>
+      <a class="toggler" id="toggler" href="#"><span></span></a>
     </div>
   </header>
 
@@ -33,7 +34,7 @@
 
     <div class="promo">
       <div class="promo__inner">
-        <span class="promo__text">Взгляните на жизнь<br>иначе!</span>
+        <span class="promo__text">Взгляните на жизнь иначе!</span>
       </div>
     </div>
 
@@ -60,11 +61,11 @@
 
 
     <div class="features">
-    <div class="features__inner">
+      <div class="features__inner">
         <h1>
-  <span class="features__header">Устали от серости мегаполиса?</span>
-  <span class="features__header">Нам есть, что вам предложить!</span>
-  </h1>
+          <span class="features__header">Устали от серости мегаполиса?</span>
+          <span class="features__header">Нам есть, что вам предложить!</span>
+        </h1>
         <section class="features__item">
           <h2>Поднимает настроение</h2>
           <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
@@ -89,18 +90,18 @@
             <h2>Николай Петров</h2>
             <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           </div>
-          <div class="reviews__slide">
-            <h2>XXX</h2>
-            <cite>«XXX XXX»</cite>
-          </div>
-          <div class="reviews__slide">
-            <h2>YYY</h2>
-            <cite>«YYY YYY»</cite>
-          </div>
-          <div class="paginator">
-            <a class="paginator__btn  paginator__btn--active" href="#"></a>
-            <a class="paginator__btn" href="#"></a>
-            <a class="paginator__btn" href="#"></a>
+          <!-- <div class="reviews__slide">
+      <h2>XXX</h2>
+      <cite>«XXX XXX»</cite>
+      </div>
+      <div class="reviews__slide">
+      <h2>YYY</h2>
+      <cite>«YYY YYY»</cite>
+      </div> -->
+          <div class="slider-controls">
+            <a class="slider-controls__btn  slider-controls__btn--active" href="#"></a>
+            <a class="slider-controls__btn" href="#"></a>
+            <a class="slider-controls__btn" href="#"></a>
           </div>
         </div>
       </div>
@@ -113,14 +114,13 @@
         <div class="tariffs__table-wrap">
           <table class="tariffs__table">
             <tr>
-              <th>
+              <th colspan="2">
                 <a class="tariff-buy" href="#">
                   <span class="tariff-name">Стандарт</span>
                   <br>
                   <span class="tariff-price">3,99 USD</span>
                 </a>
               </th>
-              <th class="del"></th>
               <tr>
                 <td class="tariffs__col-1">
                   <span class="package-option">Розовый фильтр</span>
@@ -146,10 +146,10 @@
                 </td>
               </tr>
           </table>
-          <div class="paginator">
-            <a class="paginator__btn  paginator__btn--active" href="#"></a>
-            <a class="paginator__btn" href="#"></a>
-            <a class="paginator__btn" href="#"></a>
+          <div class="slider-controls">
+            <a class="slider-controls__btn" href="#"></a>
+            <a class="slider-controls__btn  slider-controls__btn--active" href="#"></a>
+            <a class="slider-controls__btn" href="#"></a>
           </div>
         </div>
       </div>
@@ -181,6 +181,15 @@
   </div>
 
   <!-- <script src="js/script.js"></script> -->
+
+  <script>
+    var toggler = document.getElementById('toggler');
+    toggler.onclick = function (e) {
+      e.preventDefault();
+      toggler.classList.toggle('toggler--close');
+    }
+  </script>
+
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script>
     function initialize() {

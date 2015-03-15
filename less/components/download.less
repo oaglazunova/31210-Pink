@@ -1,5 +1,49 @@
 .download__inner {
-    background: @color--blue;
-    padding: 40px 0 0 0;
-    color:  @color--white;
+  padding: 45px 0 35px 0;
+  background: @color--blue;
+  color: @color--white;
+}
+
+.download__os-list {
+  height: 120px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style-type: none;
+  line-height: 120px;
+  li {
+    width: 50px;
+    margin: 0 30px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    .logo-os {
+      width: inherit;
+      height: 57px;
+      display: block;
+      border: 0;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+    }
+  }
+}
+
+li:last-child {
+  margin: 0;
+}
+
+.logo-os--apple {
+  background: url("../img/os-logos.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.logo-os--android {
+  background: url("../img/os-logos.png") no-repeat scroll -46px 0 rgba(0, 0, 0, 0);
+}
+
+.logo-os--windows {
+  background: url("../img/os-logos.png") no-repeat scroll -95px 0 rgba(0, 0, 0, 0);
+}
+
+.download__inner p {
+  width: 240px;
+  margin: 0 auto auto auto;
 }

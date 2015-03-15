@@ -1,3 +1,38 @@
-.tariffs {
-    background: @color--grey;
+.tariffs__inner {
+  background: @color--white;
+  margin: 0 0 45px 0;
+}
+
+.tariffs__table {
+  width: 320px;
+  border-collapse: collapse;
+}
+
+th {
+  background: @color--blue;
+  padding: 20px;
+  .tariff-name {
+    font: @font--medium;
+    color: @color--white;
+    text-transform: uppercase;
+  }
+  .tariff-price {
+    font: @font--big;
+    color: @color--white;
+  }
+}
+
+.tariffs__col-1 {
+  padding: 25px 0 25px 40px;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: @border--bottom;
+}
+
+.tariffs__col-2 {
+  border-bottom: @border--bottom;
+}
+
+.tariffs__table-wrap .slider-controls {
+  background: @color--grey;
 }
