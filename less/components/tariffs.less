@@ -1,38 +1,101 @@
-.tariffs__inner {
-  background: @color--white;
-  margin: 0 0 45px 0;
-}
-
-.tariffs__table {
-  width: 320px;
+.tariffs {
+  
+  &__inner {
+  min-width: 320px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: @grey;
+  }
+  &__table {
+  width: 100%;
   border-collapse: collapse;
-}
-
-th {
-  background: @color--blue;
+  background: #fff;
+  }
+  &__row-1 td {
+  background: @blue;
   padding: 20px;
+  
   .tariff-name {
-    font: @font--medium;
-    color: @color--white;
+    text-align: center;
+    display: block;
+    font-size: @font-size--plus;
+    font-weight: bold;
+    color: #fff;
     text-transform: uppercase;
   }
   .tariff-price {
-    font: @font--big;
-    color: @color--white;
+    text-align: center;
+    display: block;
+    font-size: @font-size--medium;
+    font-weight: lighter;
+    color: #fff;
   }
-}
-
-.tariffs__col-1 {
+  }
+  &__col-1 {
   padding: 25px 0 25px 40px;
   text-align: left;
   text-transform: uppercase;
+  }
+  &__table td {
   border-bottom: @border--bottom;
+  }
+  &__table-wrap .slider-controls {
+  background: @grey;
+  }
 }
 
-.tariffs__col-2 {
-  border-bottom: @border--bottom;
+.icon {
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  display: block;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
-.tariffs__table-wrap .slider-controls {
-  background: @color--grey;
+.icon-yes {
+  background: url("../img/yes.svg") no-repeat scroll 0 0;
+}
+
+.icon-no {
+  background: url("../img/no.svg") no-repeat scroll 0 0;
+}
+
+.tariffs__row-1 .tariffs__col-1,
+.tariffs__row-1 .tariffs__col-2,
+.tariffs__col-3,
+.tariffs__col-4 {
+  display: none;
+}
+
+
+
+
+@media(min-width: 700px) {
+  
+  .tariffs__inner {
+  max-width: 1200px;
+  padding: 0 0 70px;
+  }
+  .tariffs__table-wrap {
+  width: 90%;
+  margin: auto;
+  }
+  .tariffs__col-2-320px {
+  display: none;
+  }
+  .tariffs__row-1 .tariffs__col-1,
+  .tariffs__row-1 .tariffs__col-2,
+  .tariffs__col-3,
+  .tariffs__col-4 {
+  display: table-cell;
+  }
+  .tariffs__row-1 .tariffs__col-1 {
+  background: @grey;
+  }
+  .tariffs .slider-controls {
+  display: none;
+  }
 }

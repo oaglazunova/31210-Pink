@@ -21,7 +21,10 @@
     "grunt-combine-media-queries": "^1.0.19",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-lintspaces": "^0.6.0",
     "load-grunt-tasks": "^3.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.2",
+    "normalize.less": "^1.0.0"
   }
 }
