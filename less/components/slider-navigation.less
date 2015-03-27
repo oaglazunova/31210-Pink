@@ -1,0 +1,45 @@
+.slider-pagination {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  &__btn {
+    width: 6px;
+    height: 6px;
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    // border: 3px solid transparent;
+    background: @grey--medium;
+    background-clip: padding-box;
+    &:hover {
+      background: @grey--dark;
+      background-clip: padding-box;
+    }
+    &:active {
+      background: @grey--light;
+      background-clip: padding-box;
+    }
+    &--active {
+      width: 12px;
+      height: 12px;
+      margin: 0 6px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      border: 3px solid @blue;
+    }
+  }
+  @media(min-width: @screen--medium) {
+    display: none;
+  }
+}
+
+.slider-controls {
+  @media(min-width: @screen--mobile) {
+    display: none;
+  }
+  @media(min-width: @screen--medium) {
+    display: block;
+  }
+}

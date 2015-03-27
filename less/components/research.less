@@ -2,59 +2,56 @@
   display: none;
 }
 
-@media(min-width: 700px) {
-  
+@media(min-width: @screen--small) {
   .research {
-  display: block;
-  }
-  .research__h2 {
-  font-size: @font-size--biggest;
-  font-weight: bold;
-  color: #000;
-  }
-  .research__inner {
-  max-width: 1200px;
-  padding: 40px 0 40px;
-  margin: 0 auto;
-  display: flex;
-  }
-  .research__inner:before {
-  width: 262px;
-  height: 302px;
-  margin: auto;
-  display: block;
-  background: url("../img/timer-2.svg") no-repeat scroll;
-  content: "";
-  }
-  .research__container {
-  width: 50%
-  }
-  .research__item {
-  width: 87%;
-  margin: 20px auto 20px;
-  text-align: left;
-  }
-  .research__link {
-  color: @pink;
-  }
-}
-
-
-
-
-@media(min-width: 1200px) {
-  
-  .research {
-  background: @grey;
-  }
-  .research__h2 {
-  font-size: @font-size--biggest;
-  font-weight: bold;
-  }
-  .research__text {
-  font-size: @font-size--medium;
-  }
-  .research__link {
-  font-size: @font-size--medium;
+    display: block;
+    @media(min-width: @screen--medium) {
+      background: @grey;
+    }
+    &__inner {
+      width: 700px;
+      margin: 0 auto;
+      display: flex;
+      @media(min-width: @screen--medium) {
+        width: 1200px;
+        background: @grey;
+      }
+    }
+    &__inner:before {
+      width: 262px;
+      height: 302px;
+      margin: auto;
+      display: block;
+      background: url("../img/timer-2.svg") no-repeat scroll;
+      content: "";
+    }
+    &__h2 {
+      width: 87%;
+      margin: 0;
+      font-size: @font-size--biggest;
+      font-weight: @bold;
+      color: #000;
+      font-family: @font;
+      line-height: @line-height--header;
+    }
+    &__text {
+      @media(min-width: @screen--medium) {
+        font-size: @font-size--medium;
+      }
+    }
+    &__container {
+      width: 50%
+    }
+    &__item {
+      width: 87%;
+      margin: 20px auto 20px;
+      text-align: left;
+    }
+    &__link {
+      color: @pink;
+      @media(min-width: @screen--medium) {
+        font-size: @font-size--medium;
+      }
+    }
   }
 }

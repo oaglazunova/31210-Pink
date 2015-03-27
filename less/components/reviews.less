@@ -1,54 +1,64 @@
 .reviews {
-  
-  &__inner {
-  min-width: 320px;
-  max-width: 700px;
-  padding: 40px 0 70px;
-  margin: 0 auto;
   background-image: linear-gradient(-5deg, @grey 25%, #fff 25%);
+  &__inner {
+    min-width: @screen--mobile;
+    padding: 40px 0 70px;
+    margin: 0 auto;
+    @media(min-width: @screen--small) {
+      width: 700px;
+    }
+    @media(min-width: @screen--medium) {
+      width: 1200px;
+    }
   }
   &__slide {
-  text-align: center;
+    text-align: center;
   }
   &__h2 {
-  margin: 0 auto 25px auto;
-  font-size: @font-size--medium;
-  color: #000;
+    margin: 0 auto 25px auto;
+    font-size: @font-size--medium;
+    color: #000;
+    font-family: @font;
+    line-height: @line-height--header;
+    @media(min-width: @screen--small) {
+      display: none;
+    }
   }
   &__text {
-  margin: 0 2%;
+    margin: 0 2%;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--medium;
+      padding: 0 0 30px;
+    }
+    &:before {
+      @media(min-width: @screen--mobile) {
+        display: none;
+      }
+      @media(min-width: @screen--medium) {
+        width: 80px;
+        height: 70px;
+        display: block;
+        margin: auto;
+        display: block;
+        background: url("../img/quotes.svg") no-repeat scroll 50% 50%;
+        content: "";
+      }
+    }
   }
   &__name {
-  display: none;
+    display: none;
+    @media(min-width: @screen--small) {
+      display: block;
+      color: #000;
+      font-weight: bold;
+      font-size: @font-size--medium-plus;
+      padding: 0 0 15px;
+    }
   }
   &__info {
-  display: none;
-  }
-}
-
-
-
-
-@media(min-width: 700px) {
-  
-  .reviews__inner {
-  max-width: 1200px;
-  }
-  .reviews__h2 {
-  display: none;
-  }
-  .reviews__name {
-  display: block;
-  color: #000;
-  font-weight: bold;
-  font-size: @font-size--medium-plus;
-  padding: 0 0 15px;
-  }
-  .reviews__info {
-  display: block;
-  }
-  .reviews__text {
-  font-size: @font-size--medium;
-  padding: 0 0 30px;
+    display: none;
+    @media(min-width: @screen--small) {
+      display: block;
+    }
   }
 }

@@ -1,149 +1,175 @@
 .page-footer {
   &__inner {
-  min-width: 320px;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 2%;
+    min-width: @screen--mobile;
+    padding: 0;
+    margin: 0 auto;
+    @media(min-width: @screen--small) {
+      width: 700px;
+    }
+    @media(min-width: @screen--medium) {
+      width: 1200px;
+    }
   }
   &__h1 {
-  font-size: @font-size--medium;
-  font-weight: bold;
-  margin: 0 auto 40px;
-  text-align: center;
+    margin: 70px auto 40px;
+    font-size: @font-size--big;
+    font-weight: @light;
+    text-align: center;
+    font-family: @font;
+    line-height: @line-height--header;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--biggest-plus;
+    }
+    @media(min-width: @screen--medium) {
+      font-size: @font-size--biggest-plus-plus;
+    }
+  }
+  &__contacts-wrap {
+    @media(min-width: @screen--small) {
+      width: 500px;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media(min-width: @screen--medium) {
+        width: 820px;
+      }
+    }
   }
   &__contacts {
-  width: 87%;
-  margin: 0 auto 25px;
-  text-align: center;
-  }
-  &__contacts:last-child {
-  margin: 0 auto 40px;
-  }
-  &__h2 {
-  font-size: @font-size--medium;
-  margin: 0 auto 10px;
-  }
-  &__text {
-  text-decoration: none;
-  font-size: @font-size--big;
-  font-weight: lighter;
-  margin: 0;
-  color: @pink;
+    width: 87%;
+    margin: 0 auto 25px;
+    text-align: center;
+    @media(min-width: @screen--small) {
+      width: 40%;
+    }
+    @media(min-width: @screen--medium) {
+      width: 270px;
+    }
+    &:first-child {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+      @media(min-width: @screen--medium) {
+        order: 3;
+      }
+    }
+    &:last-child {
+      margin: 0 auto 40px;
+      order: 3;
+      @media(min-width: @screen--medium) {
+        order: 2;
+      }
+    }
   }
   &__contacts a:hover {
-  text-decoration: underline;
-  color: @blue;
+    text-decoration: underline;
+    color: @blue;
   }
   &__contacts a:active {
-  text-decoration: underline;
-  color: @grey--medium;
+    text-decoration: underline;
+    color: @grey--medium;
+  }
+  &__h2 {
+    margin: 0 auto 10px;
+    font-family: @font;
+    line-height: @line-height--header;
+    font-size: @font-size--medium;
+    font-weight: @bold;
+  }
+  &__text {
+    margin: 0;
+    text-decoration: none;
+    font-size: @font-size--big;
+    font-weight: @light;
+    color: @pink;
   }
   &__low {
-  display: none;
+    display: none;
+    @media(min-width: @screen--small) {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &__logo-link {
+    @media(min-width: @screen--small) {
+      width: 145px;
+      height: 40px;
+      margin: 40px 0;
+      display: block;
+      .hidden-text;
+      background: url("../img/Pink-logo-footer-2@1x.png") no-repeat scroll 0 0;
+    }
+    @media(min-width: @screen--medium) {
+      margin: 77px 0;
+      background: url("../img/Pink-logo-footer-3@1x.png") no-repeat scroll 0 0;
+    }
+  }
+  &__social {
+    @media(min-width: @screen--small) {
+      display: flex;
+    }
+  }
+  &__icon {
+    @media(min-width: @screen--small) {
+      width: 46px;
+      height: 45px;
+      margin: 0 10px;
+      display: block;
+      .hidden-text;
+      border-radius: 50%;
+      border: 2px solid @grey--light;
+    }
+  }
+  &__design {
+    @media(min-width: @screen--small) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__credit {
+    @media(min-width: @screen--small) {
+      width: 27px;
+      height: 33px;
+      margin: 0 10px;
+      display: block;
+      .hidden-text;
+    }
   }
 }
 
 #map {
   height: 200px;
-}
-
-
-
-
-@media(min-width: 700px) {
-    
-  .page-footer__inner {
-  max-width: 1200px;
-  padding: 40px 2% 0;
+  background: url("../img/map--320.jpeg") no-repeat scroll;
+  @media(min-width: @screen--small) {
+    height: 375px;
+    background: url("../img/map--700.jpeg") no-repeat scroll;
   }
-  .page-footer__h1 {
-  font-size: 40pt;
-  font-weight: lighter;
-  }
-  .page-footer__contacts-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  }
-  .page-footer__contacts {
-  width: 40%;
-  }
-  #map {
-  height: 375px;
-  }
-  .page-footer__low {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  }
-  .page-footer__logo-link {
-  width: 145px;
-  height: 40px;
-  margin: 40px 0;
-  display: block;
-  border: 0;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  background: url("../img/Pink-logo-footer-2@1x.png") no-repeat scroll 0 0;
-  }
-  .page-footer__social {
-  display: flex;
-  }
-  .page-footer__icon {
-  width: 46px;
-  height: 45px;
-  margin: 0 10px;
-  display: block;
-  border: 0;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  border-radius: 50%;
-  border: 2px solid @grey--light;
-  }
-  .icon--twitter {
-  background: url("../img/twitter.svg") no-repeat scroll 50% 50%;
-  }
-  .icon--facebook {
-  background: url("../img/facebook.svg") no-repeat scroll 50% 50%;
-  }
-  .icon--youtube {
-  background: url("../img/youtube.svg") no-repeat scroll 50% 50%;
-  }
-  .page-footer__design {
-  display: flex;
-  align-items: center;
-  }
-  .page-footer__credit {
-  width: 27px;
-  height: 33px;
-  margin: 0 10px;
-  display: block;
-  border: 0;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  }
-  .icon--designer {
-  background: url("../img/glukhanko.svg") no-repeat scroll 50% 50%;
-  }
-  .icon--customer {
-  background: url("../img/htmlacademy.svg") no-repeat scroll 50% 50%;
+  @media(min-width: @screen--medium) {
+    height: 525px; 
+    background: url("../img/map--1200.jpeg") no-repeat scroll;
   }
 }
 
-
-
-
-@media(min-width: 1200px) {
-    
-  #map {
-  height: 525px;
+@media(min-width: @screen--small) {
+  .icon-twitter {
+    background: url("../img/twitter.svg") no-repeat scroll 50% 50%;
   }
-  .page-footer__logo-link {
-  margin: 77px 0;
-  background: url("../img/Pink-logo-footer-3@1x.png") no-repeat scroll 0 0;
+  .icon-facebook {
+    background: url("../img/facebook.svg") no-repeat scroll 50% 50%;
+  }
+  .icon-youtube {
+    background: url("../img/youtube.svg") no-repeat scroll 50% 50%;
+  }
+  .icon-designer {
+    background: url("../img/glukhanko.svg") no-repeat scroll 50% 50%;
+  }
+  .icon-customer {
+    background: url("../img/htmlacademy.svg") no-repeat scroll 50% 50%;
   }
 }

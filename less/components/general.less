@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
@@ -7,25 +11,28 @@
 body {
   background: #fff;
   color: @blue;
-  font-family: 'Open Sans', sans-serif;
+  font-family: @font;
   font-size: @font-size;
 }
 
 .btn {
   padding: 15px 40px;
-  border: 3.5px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50px;
   font-size: @font-size--medium;
   color: #fff;
   text-decoration: none;
-}
-
-.btn:hover {
-  color: @pink;
-  background: #fff;
+  font-weight: @bold;
+  @media(min-width: @screen--medium) {
+    font-size: @font-size--btn1200;
+  }
+  &:hover {
+    color: @pink;    
+    background: #fff;
+  }
 }
 
 .btn:active {
-  color: @pink-light;
+  color: @pink--light;
   background: #fff;
 }
