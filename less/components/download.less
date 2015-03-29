@@ -17,16 +17,17 @@
     display: block;
     text-align: center;
     color: #fff;
-    font-size: @font-size--big;
+    font-size: @font-size--320-h1;
     font-weight: @light;
+    
     @media(min-width: @screen--small) {
       margin: 0 auto;
       padding: 0 40px 40px;
-      font-size: @font-size--biggest-plus;
+      font-size: @font-size--700-h1;
       display: block;
     }
     @media(min-width: @screen--medium) {
-      font-size: @font-size--biggest-plus-plus;
+      font-size: @font-size--1200-h1;
     }
   }
   &__os-list {
@@ -35,6 +36,7 @@
     margin: 10px 0 0;
     list-style-type: none;
     line-height: 120px;
+    
     li {
       width: 50px;
       margin: 0 30px 0 0;
@@ -44,6 +46,7 @@
     .logo-os {
       display: block;
       .hidden-text;
+      
       &--apple {
         height: 57px;
         background: url("../img/apple-logo.svg") no-repeat scroll 0 0;
@@ -65,13 +68,15 @@
     padding: 0 40px;
     margin: 0 auto auto;
     font-weight: @light;
+    
     @media(min-width: @screen--small) {
       padding: 0;
       font-weight: @light;
-      font-size: @font-size--medium;
+      font-size: @font-size--700-h4;
     }
     @media(min-width: @screen--medium) {
       padding: 0 40px;
+      font-size: @font-size--1200;
     }
   }
 }

@@ -1,14 +1,19 @@
 .reviews {
   background-image: linear-gradient(-5deg, @grey 25%, #fff 25%);
+  
   &__inner {
     min-width: @screen--mobile;
     padding: 40px 0 70px;
     margin: 0 auto;
+    
     @media(min-width: @screen--small) {
       width: 700px;
     }
     @media(min-width: @screen--medium) {
       width: 1200px;
+    }
+    @media(min-width: @screen--big) {
+      width: 1440px;
     }
   }
   &__slide {
@@ -16,18 +21,19 @@
   }
   &__h2 {
     margin: 0 auto 25px auto;
-    font-size: @font-size--medium;
+    font-size: @font-size--320-h2;
     color: #000;
     font-family: @font;
-    line-height: @line-height--header;
+    
     @media(min-width: @screen--small) {
       display: none;
     }
   }
   &__text {
     margin: 0 2%;
+    
     @media(min-width: @screen--small) {
-      font-size: @font-size--medium;
+      font-size: @font-size--320-h2;
       padding: 0 0 30px;
     }
     &:before {
@@ -47,16 +53,18 @@
   }
   &__name {
     display: none;
+    
     @media(min-width: @screen--small) {
       display: block;
       color: #000;
       font-weight: bold;
-      font-size: @font-size--medium-plus;
+      font-size: @font-size--700-h3;
       padding: 0 0 15px;
     }
   }
   &__info {
     display: none;
+    
     @media(min-width: @screen--small) {
       display: block;
     }

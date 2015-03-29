@@ -1,8 +1,10 @@
 .tariffs {
   background: @grey;
+  
   &__inner {
-    min-width: @screen--mobile;
+    min-width: @screen--small;
     margin: 0 auto;
+    
     @media(min-width: @screen--small) {
       width: 700px;
       padding: 0 0 70px;
@@ -10,66 +12,140 @@
     @media(min-width: @screen--medium) {
       width: 1200px;
     }
-  }
-  &__table-wrap {
-    @media(min-width: @screen--small) {
-      width: 90%;
-      margin: auto;
+    @media(min-width: @screen--big) {
+      width: 1440px;
+    }
+    .slider-pagination {
+      background: @grey;
+      
+      @media(min-width: @screen--small) {
+        display: none;
+      }
     }
   }
   &__table {
-    width: 100%;
+    margin: 0;
     border-collapse: collapse;
     background: #fff;
+    
+    @media(min-width: @screen--small) {
+      margin: 0 auto;
+    }
   }
   &__table td {
-    border-bottom: 2px solid (@grey - #0d0d0d);
+    border: 2px solid (@grey - #0d0d0d);
   }
-  &__row-1 &__col-1,
-  &__row-1 &__col-2,
+  &__col-1 {
+    display: none;
+    
+    @media(min-width: @screen--small) {
+      width: 153px;
+      padding: 15px;
+      display: table-cell;
+      text-align: left;
+    }
+    @media(min-width: @screen--medium) {
+      width: 233px;
+      padding: 20px;
+    }
+  }
+  &__col-2,
   &__col-3,
   &__col-4 {
-    display: none;
+    width: 280px;
     @media(min-width: @screen--small) {
-      display: table-cell;
+      width: 153px;
+    }
+    @media(min-width: @screen--medium) {
+      width: 230px;
     }
   }
   &__row-1 &__col-1 {
     @media(min-width: @screen--small) {
       background: @grey;
+      border: transparent;
     }
   }
   &__row-1 td {
     background: @blue;
     padding: 20px;
   }
+  &__buy {
+    position: relative;
+  }
+  &__ribbon {
+    position: absolute;
+    top: -22px;
+    left: -20px;
+    overflow: hidden;
+    margin: 0;
+    width: 61px;
+    height: 61px;
+    
+    @media(min-width: @screen--medium) {
+      width: 81px;
+      height: 81px;
+    }
+    & span {
+      width: 120px;
+      padding: 5px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: @pink;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      transform: rotate(-45deg) translateX(-10px) translateY(-40px);
+      transform-origin: 0 0;
+      
+      @media(min-width: @screen--medium) {
+        top: 80px;
+        left: 10px;
+      }
+    }
+  }
   &__name {
     text-align: center;
     display: block;
-    font-size: @font-size--plus;
-    font-weight: bold;
+    font-size: @font-size--320-h2;
+    font-weight: @bold;
     color: #fff;
     text-transform: uppercase;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--700-h5;
+    }
+    @media(min-width: @screen--medium) {
+      font-size: @font-size--1200;
+    }
   }
   &__price {
     text-align: center;
     display: block;
-    font-size: @font-size--medium;
-    font-weight: lighter;
+    font-size: @font-size--320-h1;
+    font-weight: @light;
     color: #fff;
-  }
-  &__col-1 {
-    padding: 25px 0 25px 40px;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  &__col-2--320px {
+    
     @media(min-width: @screen--small) {
-      display: none;
+      font-size: @font-size--700-h4;
+    }
+    @media(min-width: @screen--medium) {
+      font-size: @font-size--1200-h3;
     }
   }
-  &__table-wrap .slider-pagination {
-    background: @grey;
+}
+
+.package-option {
+  display: none;
+  
+  @media(min-width: @screen--small) {
+    display: block;
+  }
+  &--320 {
+    display: block;
+    
     @media(min-width: @screen--small) {
       display: none;
     }

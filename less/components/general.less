@@ -12,22 +12,30 @@ body {
   background: #fff;
   color: @blue;
   font-family: @font;
-  font-size: @font-size;
+  font-size: @font-size--320;
+  
+  @media(min-width: @screen--small) {
+    font-size: @font-size--700;
+  }
+  @media(min-width: @screen--medium) {
+    font-size: @font-size--1200;
+  }
 }
 
 .btn {
-  padding: 15px 40px;
+  padding: 10px 30px;
   border: 4px solid #fff;
   border-radius: 50px;
-  font-size: @font-size--medium;
+  font-size: @font-size--320-h2;
   color: #fff;
   text-decoration: none;
   font-weight: @bold;
+  
   @media(min-width: @screen--medium) {
-    font-size: @font-size--btn1200;
+    font-size: @font-size--1200-btn;
   }
   &:hover {
-    color: @pink;    
+    color: @pink;
     background: #fff;
   }
 }

@@ -3,25 +3,30 @@
     min-width: @screen--mobile;
     padding: 0;
     margin: 0 auto;
+    
     @media(min-width: @screen--small) {
       width: 700px;
     }
     @media(min-width: @screen--medium) {
       width: 1200px;
     }
+    @media(min-width: @screen--big) {
+      width: 1440px;
+    }
   }
   &__h1 {
     margin: 70px auto 40px;
-    font-size: @font-size--big;
+    font-size: @font-size--320-h1;
     font-weight: @light;
     text-align: center;
     font-family: @font;
-    line-height: @line-height--header;
+    color: @blue;
+    
     @media(min-width: @screen--small) {
-      font-size: @font-size--biggest-plus;
+      font-size: @font-size--700-h1;
     }
     @media(min-width: @screen--medium) {
-      font-size: @font-size--biggest-plus-plus;
+      font-size: @font-size--1200-h1;
     }
   }
   &__contacts-wrap {
@@ -32,6 +37,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      
       @media(min-width: @screen--medium) {
         width: 820px;
       }
@@ -41,8 +47,9 @@
     width: 87%;
     margin: 0 auto 25px;
     text-align: center;
+    
     @media(min-width: @screen--small) {
-      width: 40%;
+      width: 200px;
     }
     @media(min-width: @screen--medium) {
       width: 270px;
@@ -52,6 +59,7 @@
     }
     &:nth-child(2) {
       order: 2;
+      
       @media(min-width: @screen--medium) {
         order: 3;
       }
@@ -59,6 +67,10 @@
     &:last-child {
       margin: 0 auto 40px;
       order: 3;
+      
+      @media(min-width: @screen--small) {
+        width: 280px;
+      }
       @media(min-width: @screen--medium) {
         order: 2;
       }
@@ -75,19 +87,19 @@
   &__h2 {
     margin: 0 auto 10px;
     font-family: @font;
-    line-height: @line-height--header;
-    font-size: @font-size--medium;
+    font-size: @font-size--320-h2;
     font-weight: @bold;
   }
   &__text {
     margin: 0;
     text-decoration: none;
-    font-size: @font-size--big;
+    font-size: @font-size--320-h1;
     font-weight: @light;
     color: @pink;
   }
   &__low {
     display: none;
+    
     @media(min-width: @screen--small) {
       padding: 0;
       margin: 0;
@@ -145,20 +157,29 @@
 
 #map {
   height: 200px;
-  background: url("../img/map--320.jpeg") no-repeat scroll;
+  margin: 0 auto;
+  background: url("../img/map--320.jpg") no-repeat scroll 50%;
   @media(min-width: @screen--small) {
     height: 375px;
-    background: url("../img/map--700.jpeg") no-repeat scroll;
+    margin: 0 auto;
+    background: url("../img/map--700.jpg") no-repeat scroll 50% 50%;
   }
   @media(min-width: @screen--medium) {
-    height: 525px; 
-    background: url("../img/map--1200.jpeg") no-repeat scroll;
+    height: 525px;
+    margin: 0 auto;
+    background: url("../img/map--1200.jpg") no-repeat scroll 50% 50%;
+  }
+  @media(min-width: @screen--big) {
+    height: 525px;
+    margin: 0 auto;
+    background: url("../img/map--1440.jpg") no-repeat scroll 50% 50%;
   }
 }
 
 @media(min-width: @screen--small) {
   .icon-twitter {
-    background: url("../img/twitter.svg") no-repeat scroll 50% 50%;
+    background-color: red;
+    mask-image: url("../img/twitter.svg") top left;
   }
   .icon-facebook {
     background: url("../img/facebook.svg") no-repeat scroll 50% 50%;

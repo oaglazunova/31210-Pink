@@ -1,5 +1,6 @@
 .features {
   background-image: linear-gradient(-5deg, @grey 80%, #fff 80%);
+  
   @media(min-width: @screen--small) {
     background-image: linear-gradient(-5deg, @grey 60%, #fff 60%);
   }
@@ -7,6 +8,7 @@
     min-width: @screen--mobile;
     padding: 0;
     margin: 0 auto;
+    
     @media(min-width: @screen--small) {
       width: 700px;
       padding: 0;
@@ -15,45 +17,53 @@
     @media(min-width: @screen--medium) {
       width: 1200px;
     }
+    @media(min-width: @screen--big) {
+      width: 1440px;
+    }
   }
   &__h1 {
     padding: 45px 0 120px 0;
     margin: 0;
     text-align: center;
-    font-size: @font-size--big;
-    font-weight: @normal;
     font-family: @font;
-    line-height: @line-height--header;
+    
     @media(min-width: @screen--small) {
       padding: 45px 0 50px 0;
-      font-size: @font-size--biggest-plus;
     }
   }
   &__slogan {
-    width: 80%;
     display: block;
-    margin: 0 auto 40px auto;
-    font-size: @font-size--big;
+    margin: 0 auto;
+    font-size: @font-size--320-h1;
     font-weight: @light;
+    line-height: 30px;
+    
     @media(min-width: @screen--small) {
-      font-size: @font-size--biggest-plus;
+      font-size: @font-size--700-h1;
+      line-height: 45px;
     }
     @media(min-width: @screen--medium) {
-      font-size: @font-size--biggest-plus-plus;
+      font-size: @font-size--1200-h1;
+      line-height: 60px;
     }
-    &:last-child {
-      margin: 0 auto;
+    &:first-child {
+      margin: 0 auto 30px;
+      
+      @media(min-width: @screen--small) {
+        margin: 0 auto;
+      }
     }
   }
   &__sections {
     @media(min-width: @screen--small) {
       display: flex;
+      justify-content: center;
     }
     &:before {
       @media(min-width: @screen--small) {
         width: 268px;
         height: 481px;
-        margin: auto;
+        margin: 0 40px 0 0;
         display: block;
         background: url("../img/iphone-screen-2-3@1x.png");
         content: "";
@@ -64,9 +74,6 @@
     }
   }
   &__container {
-    @media(min-width: @screen--small) {
-      width: 50%;
-    }
     @media(min-width: @screen--medium) {
       width: 90%;
       margin: 0 auto;
@@ -76,9 +83,10 @@
     }
   }
   &__item {
-    width: 87%;
+    width: 310px;
     margin: 20px auto 20px;
     text-align: center;
+    
     @media(min-width: @screen--small) {
       text-align: left;
     }
@@ -98,6 +106,7 @@
     }
     &:last-child {
       margin: 0 auto;
+      
       @media(min-width: @screen--medium) {
         margin: 20px auto 20px;
       }
@@ -108,13 +117,14 @@
         display: block;
         background: url("../img/iphone-screen-2-3@1x.png");
         content: "";
+        
         @media(min-width: @screen--small) {
           display: none;
         }
       }
     }
     &--pivot {
-      &:first-child:before {
+      &:first-child:before {        
         @media(min-width: @screen--medium) {
           background: url("../img/iphone-screen-2-1@1x.png");
         }
@@ -134,12 +144,17 @@
   &__h2 {
     margin: 0 0 20px;
     color: #000;
-    font-size: @font-size--medium;
+    font-size: @font-size--320-h2;
     font-family: @font;
-    line-height: @line-height--header;
+    font-weight: bold;
+    line-height: 21px;
+    
+    @media(min-width: @screen--small) {
+      font-size: @font-size--700-h4;
+    }
     @media(min-width: @screen--medium) {
-      font-size: @font-size--biggest;
-      font-weight: bold;
+      font-size: @font-size--1200-h2;
+      line-height: 30px;
     }
   }
   &__item:last-child .features__text {
@@ -147,8 +162,5 @@
   }
   &__text {
     margin: 0;
-    @media(min-width: @screen--medium) {
-      font-size: @font-size--medium;
-    }
   }
 }

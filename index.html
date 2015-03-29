@@ -21,9 +21,14 @@
     <div class="page-header__inner">
       <div class="page-header__menu">
         <a class="page-header__logo-link" href="#">PINK</a>
+        <a class="menu-toggler" id="toggler" href="#"><span></span></a>
         <nav class="main-nav">
 
           <ul>
+            <li>
+              <a class="page-header__logo-link" href="#">PINK</a>
+              <a class="menu-toggler" id="toggler" href="#"><span></span></a>
+            </li>
             <li>
               <a class="main-nav__btn" href="#">Информация</a>
             </li>
@@ -39,12 +44,12 @@
           </ul>
 
         </nav>
-        <a class="menu-toggler" id="toggler" href="#"><span></span></a>
+
       </div>
       <div class="page-header__promo">
         <span class="page-header__promo-text">Взгляните на жизнь иначе!</span>
         <div class="page-header__download">
-         <span class="download__promo-text">Взгляните на жизнь иначе!</span>
+          <span class="download__promo-text">Взгляните на жизнь иначе!</span>
           <a class="btn" href="#">Скачать приложение</a>
           <ul class="download__os-list">
             <li>
@@ -116,13 +121,12 @@
 
     <div class="research">
       <div class="research__inner">
-        <div class="research__container">
-          <section class="research__item">
-            <h2 class="research__h2">Эффект на 24 часа!</h2>
-            <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="research__link" href="#">Узнать больше об исследовании</a>
-          </section>
-        </div>
+        <section class="research__item">
+          <h2 class="research__h2">Эффект на 24 часа!</h2>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </section>
+
       </div>
     </div>
 
@@ -152,89 +156,88 @@
 
     <div class="tariffs">
       <div class="tariffs__inner">
-        <div class="tariffs__table-wrap">
-          <table class="tariffs__table">
-            <tr class="tariffs__row-1">
+        <table class="tariffs__table">
+          <tr class="tariffs__row-1">
+            <td class="tariffs__col-1">
+            </td>
+            <td class="tariffs__col-2">
+              <div class="tariffs__buy">
+                <span class="tariffs__name">База</span>
+                <span class="tariffs__price">1,99 USD</span>
+              </div>
+            </td>
+            <td class="tariffs__col-3">
+              <div class="tariffs__buy">
+                <p class="tariffs__ribbon"><span>ХИТ</span>
+                </p>
+                <span class="tariffs__name">Стандарт</span>
+                <span class="tariffs__price">3,99 USD</span>
+              </div>
+            </td>
+            <td class="tariffs__col-4">
+              <div class="tariffs__buy">
+                <span class="tariffs__name">АНЛИМ</span>
+                <span class="tariffs__price">9,99 USD</span>
+              </div>
+            </td>
+            <tr class="tariffs__row-2">
               <td class="tariffs__col-1">
+                <span class="package-option">Розовый фильтр</span>
               </td>
-
               <td class="tariffs__col-2">
-                <div class="tariffs__buy">
-                  <span class="tariffs__name">База</span>
-                  <span class="tariffs__price">1,99 USD</span>
-                </div>
+                <span class="package-option--320">Розовый фильтр</span>
+                <span class="icon  icon-yes">Есть</span>
               </td>
-
-              <td class="tariffs__col-2--320px" colspan="2">
-                <div class="tariffs__buy">
-                  <span class="tariffs__name">База</span>
-                  <span class="tariffs__price">1,99 USD</span>
-                </div>
-              </td>
-
-
               <td class="tariffs__col-3">
-                <div class="tariffs__buy">
-                  <span class="tariffs__label">HIT</span>
-                  <span class="tariffs__name">Стандарт</span>
-                  <span class="tariffs__price">3,99 USD</span>
-                </div>
+                <span class="package-option--320">Розовый фильтр</span>
+                <span class="icon  icon-yes">Есть</span>
               </td>
               <td class="tariffs__col-4">
-                <div class="tariffs__buy">
-                  <span class="tariffs__name">АНЛИМ</span>
-                  <span class="tariffs__price">9,99 USD</span>
-                </div>
+                <span class="package-option--320">Розовый фильтр</span>
+                <span class="icon  icon-yes">Есть</span>
               </td>
-              <tr class="tariffs__row-2">
-                <td class="tariffs__col-1">
-                  <span class="package-option">Розовый фильтр</span>
-                </td>
-                <td class="tariffs__col-2">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-                <td class="tariffs__col-3">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-                <td class="tariffs__col-4">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-              </tr>
-              <tr class="tariffs__row-3">
-                <td class="tariffs__col-1">
-                  <a class="package-option">Смайлики</a>
-                </td>
-                <td class="tariffs__col-2">
-                  <span class="icon  icon-no">Нет</span>
-                </td>
-                <td class="tariffs__col-3">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-                <td class="tariffs__col-4">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-              </tr>
-              <tr class="tariffs__row-4">
-                <td class="tariffs__col-1">
-                  <a class="tariffs-option">Комментарии</a>
-                </td>
-                <td class="tariffs__col-2">
-                  <span class="icon  icon-no">Нет</span>
-                </td>
-                <td class="tariffs__col-3">
-                  <span class="icon  icon-no">Нет</span>
-                </td>
-                <td class="tariffs__col-4">
-                  <span class="icon  icon-yes">Есть</span>
-                </td>
-              </tr>
-          </table>
-          <div class="slider-pagination">
-            <a class="slider-pagination__btn" href="#"></a>
-            <a class="slider-pagination__btn--active" href="#"></a>
-            <a class="slider-pagination__btn" href="#"></a>
-          </div>
+            </tr>
+            <tr class="tariffs__row-3">
+              <td class="tariffs__col-1">
+                <a class="package-option">Смайлики</a>
+              </td>
+              <td class="tariffs__col-2">
+                <span class="package-option--320">Смайлики</span>
+                <span class="icon  icon-no">Нет</span>
+              </td>
+              <td class="tariffs__col-3">
+                <span class="package-option--320">Смайлики</span>
+                <span class="icon  icon-yes">Есть</span>
+              </td>
+              <td class="tariffs__col-4">
+                <span class="package-option--320">Смайлики</span>
+                <span class="icon  icon-yes">Есть</span>
+              </td>
+            </tr>
+            <tr class="tariffs__row-4">
+              <td class="tariffs__col-1">
+                <a class="tariffs-option">Комментарии</a>
+              </td>
+              <td class="tariffs__col-2">
+                <span class="package-option--320">Комментарии</span>
+                <span class="icon  icon-no">Нет</span>
+              </td>
+              <td class="tariffs__col-3">
+                <span class="package-option--320">Комментарии</span>
+                <span class="icon  icon-yes">Есть</span>
+              </td>
+              <td class="tariffs__col-4">
+                <span class="package-option--320">Комментарии</span>
+                <span class="icon  icon-yes">Есть</span>
+              </td>
+            </tr>
+        </table>
+        <div class="slider-pagination">
+          <a class="slider-pagination__btn" href="#"></a>
+          <a class="slider-pagination__btn--active" href="#"></a>
+          <a class="slider-pagination__btn" href="#"></a>
         </div>
+
       </div>
     </div>
 
