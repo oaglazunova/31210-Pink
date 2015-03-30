@@ -1,16 +1,19 @@
 .reviews {
   background-image: linear-gradient(-5deg, @grey 25%, #fff 25%);
-  
+  @media(min-width: @screen--medium) {
+    background-image: linear-gradient(-5deg, @grey 20%, #fff 20%);
+  }
   &__inner {
     min-width: @screen--mobile;
     padding: 40px 0 70px;
     margin: 0 auto;
-    
     @media(min-width: @screen--small) {
       width: 700px;
+      padding: 30px 0 100px;
     }
     @media(min-width: @screen--medium) {
       width: 1200px;
+      padding: 0 0 140px;
     }
     @media(min-width: @screen--big) {
       width: 1440px;
@@ -24,17 +27,20 @@
     font-size: @font-size--320-h2;
     color: #000;
     font-family: @font;
-    
     @media(min-width: @screen--small) {
       display: none;
     }
   }
   &__text {
     margin: 0 2%;
-    
     @media(min-width: @screen--small) {
       font-size: @font-size--320-h2;
       padding: 0 0 30px;
+    }
+    @media(min-width: @screen--medium) {
+      width: 680px;
+      padding: 40px 0;
+      margin: 0 auto;
     }
     &:before {
       @media(min-width: @screen--mobile) {
@@ -43,8 +49,7 @@
       @media(min-width: @screen--medium) {
         width: 80px;
         height: 70px;
-        display: block;
-        margin: auto;
+        margin: 30px auto;
         display: block;
         background: url("../img/quotes.svg") no-repeat scroll 50% 50%;
         content: "";
@@ -53,7 +58,6 @@
   }
   &__name {
     display: none;
-    
     @media(min-width: @screen--small) {
       display: block;
       color: #000;
@@ -64,7 +68,6 @@
   }
   &__info {
     display: none;
-    
     @media(min-width: @screen--small) {
       display: block;
     }

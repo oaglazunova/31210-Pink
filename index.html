@@ -145,8 +145,8 @@
             <a class="slider-pagination__btn" href="#"></a>
           </div>
           <div class="slider-controls">
-            <a class="slider-controls__left" href="#"> x </a>
-            <a class="slider-controls__right" href="#"> x </a>
+            <a class="slider-controls__btn slider-controls__btn--left" href="#">Nazad</a>
+            <a class="slider-controls__btn slider-controls__btn--right" href="#">Vpered</a>
           </div>
         </div>
       </div>
@@ -287,18 +287,8 @@
   <script src="js/menu-toggler.js"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script>
-    function initialize() {
-      var mapCanvas = document.getElementById('map');
-      var mapOptions = {
-        center: new google.maps.LatLng(59.936148, 30.322917),
-        zoom: 16,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      }
-      var map = new google.maps.Map(mapCanvas, mapOptions)
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+  <script src="js/google-map.js"></script>
+  
   <script src="http://code.jquery.com/jquery.min.js">
   </script>
   <!--  <script src="js/main-navigation.js">
