@@ -1,25 +1,30 @@
 .page-header {
-  background: @blue--header-bkg;
+  background: @blue--header-bkg url("../img/header-bkg--320.jpg") 0 0 no-repeat;
+  @media(min-width: @screen--small) {
+    background: @blue--header-bkg url("../img/header-bkg--700.jpg") 50% 50% no-repeat;
+  }
+  @media(min-width: @screen--medium) {
+    background: @blue--header-bkg url("../img/header-bkg--1200.jpg") 50% 50% no-repeat;
+  }
+  @media(min-width: @screen--big) {
+    background: @blue--header-bkg url("../img/header-bkg--1440.jpg") no-repeat 50% 50%;
+  }
   &__inner {
     min-width: @screen--mobile;
     margin: 0 auto;
-    background: url("../img/header-bkg--320.jpg") 0 0 no-repeat;
     background-position: top;
     @media(min-width: @screen--small) {
       width: @screen--small;
       height: 730px;
       margin: 0 auto;
-      background: url("../img/header-bkg--700.jpg") no-repeat 50% 50%;
     }
     @media(min-width: @screen--medium) {
       width: @screen--medium;
       height: 850px;
-      background: url("../img/header-bkg--1200.jpg") 50% 50% no-repeat;
     }
     @media(min-width: @screen--big) {
       width: @screen--big;
       height: 855px;
-      background: url("../img/header-bkg--1440.jpg") 50% 50% no-repeat;
     }
   }
   &__menu {
@@ -34,6 +39,9 @@
     }
     @media(min-width: @screen--medium) {
       width: @screen--medium;
+    }
+    @media(min-width: @screen--big) {
+      width: @screen--big;
     }
   }
   &__logo-link {
@@ -53,8 +61,16 @@
       margin: 42px 60px;
       background: url("../img/Pink-logo-3@1x.png") no-repeat scroll 0 0;
     }
+    &:hover {
+      @media(min-width: @screen--small) {
+        background: url("../img/Pink-logo-2@1x--hvr.png") no-repeat scroll 0 0;
+      }
+    }
     &:active {
       opacity: .3;
+      @media(min-width: @screen--small) {
+        background: url("../img/Pink-logo-2@1x.png") no-repeat scroll 0 0;
+      }
     }
   }
   &__promo {

@@ -5,8 +5,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(-300px);
+  // translateY(65px);
+  transition-duration: 1s;
   @media(min-width: @screen--mobile) {
-    display: none;
+//    display: none;
   }
   @media(min-width: @screen--medium) {
     width: 900px;
@@ -53,6 +56,7 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
+    border-bottom: 2px solid transparent;
     @media(min-width: @screen--medium) {
       padding: 20px 0 10px;
       text-transform: capitalize;

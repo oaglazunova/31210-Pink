@@ -2,7 +2,7 @@
   background: @grey;
   
   &__inner {
-    min-width: @screen--small;
+    min-width: @screen--mobile;
     margin: 0 auto;
     
     @media(min-width: @screen--small) {
@@ -23,10 +23,13 @@
       }
     }
   }
+  &__table-wrap {
+    overflow: hidden;
+  }
+  
   &__table {
     margin: 0;
     border-collapse: collapse;
-    background: #fff;
     
     @media(min-width: @screen--small) {
       margin: 0 auto;
@@ -34,6 +37,8 @@
   }
   &__table td {
     border: 2px solid (@grey - #0d0d0d);
+    
+    background: #fff;
   }
   &__col-1 {
     display: none;
@@ -75,7 +80,7 @@
   }
   &__ribbon {
     position: absolute;
-    top: -22px;
+    top: -20px;
     left: -20px;
     overflow: hidden;
     margin: 0;

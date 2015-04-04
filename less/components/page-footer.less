@@ -1,4 +1,5 @@
 .page-footer {
+  position: relative;
   &__inner {
     min-width: @screen--mobile;
     padding: 0;
@@ -161,6 +162,7 @@
   height: 200px;
   margin: 0 auto;
   background: url("../img/map--320.jpg") no-repeat scroll 50%;
+  z-index: 0;
   @media(min-width: @screen--small) {
     height: 375px;
     margin: 0 auto;
@@ -176,4 +178,24 @@
     margin: 0 auto;
     background: url("../img/map--1440.jpg") no-repeat scroll 50% 50%;
   }
+}
+
+.google-map:before {
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  position: absolute;
+  background: url("../img/map-arrow.svg") no-repeat 50% 50%;
+  background-size: 100% 100%;
+  content: "";
+  @media(min-width: @screen--small) {
+    height: 60px;
+  }
+  @media(min-width: @screen--medium) {
+    height: 90px;
+  }
+  @media(min-width: @screen--big) {
+    height: 110px;
+  }
+  
 }

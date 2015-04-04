@@ -469,13 +469,12 @@ body {
 }
 
 .page-header {
-	background: #12181e;
+	background: #12181e url("../img/header-bkg--320.jpg") 0 0 no-repeat;
 }
 
 .page-header__inner {
 	min-width: 320px;
 	margin: 0 auto;
-	background: url("../img/header-bkg--320.jpg") 0 0 no-repeat;
 	background-position: top;
 }
 
@@ -689,7 +688,7 @@ body {
 }
 
 .tariffs__inner {
-	min-width: 700px;
+	min-width: 320px;
 	margin: 0 auto;
 }
 
@@ -697,14 +696,18 @@ body {
 	background: #f2f2f2;
 }
 
+.tariffs__table-wrap {
+	overflow: hidden;
+}
+
 .tariffs__table {
 	margin: 0;
 	border-collapse: collapse;
-	background: #fff;
 }
 
 .tariffs__table td {
 	border: 2px solid #e5e5e5;
+	background: #fff;
 }
 
 .tariffs__col-1 {
@@ -728,7 +731,7 @@ body {
 
 .tariffs__ribbon {
 	position: absolute;
-	top: -22px;
+	top: -20px;
 	left: -20px;
 	overflow: hidden;
 	margin: 0;
@@ -788,6 +791,10 @@ body {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
+}
+
+.page-footer {
+	position: relative;
 }
 
 .page-footer__inner {
@@ -867,6 +874,17 @@ body {
 	height: 200px;
 	margin: 0 auto;
 	background: url("../img/map--320.jpg") no-repeat scroll 50%;
+	z-index: 0;
+}
+
+.google-map:before {
+	width: 100%;
+	height: 30px;
+	z-index: 1;
+	position: absolute;
+	background: url("../img/map-arrow.svg") no-repeat 50% 50%;
+	background-size: 100% 100%;
+	content: "";
 }
 
 .slider-pagination {
@@ -963,7 +981,7 @@ body {
 	height: 210px;
 	position: absolute;
 	top: 126px;
-	left: 69px;
+	left: 45px;
 	content: "24";
 	color: #d22856;
 	font-size: 105px;
@@ -1001,6 +1019,9 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
+	-webkit-transform: translateY(-300px);
+	transform: translateY(-300px);
+	transition-duration: 1s;
 }
 
 .main-nav ul {
@@ -1042,6 +1063,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	position: relative;
+	border-bottom: 2px solid transparent;
 }
 
 .main-nav__btn:active {
@@ -1192,10 +1214,6 @@ body {
 	display: none;
 }
 
-.main-nav {
-	display: none;
-}
-
 }
 
 @media (min-width: 700px) {
@@ -1204,11 +1222,14 @@ body {
 	font-size: 14px;
 }
 
+.page-header {
+	background: #12181e url("../img/header-bkg--700.jpg") 50% 50% no-repeat;
+}
+
 .page-header__inner {
 	width: 700px;
 	height: 730px;
 	margin: 0 auto;
-	background: url("../img/header-bkg--700.jpg") no-repeat 50% 50%;
 }
 
 .page-header__menu {
@@ -1219,6 +1240,14 @@ body {
 	width: 145px;
 	height: 40px;
 	margin: 42px 0;
+	background: url("../img/Pink-logo-2@1x.png") no-repeat scroll 0 0;
+}
+
+.page-header__logo-link:hover {
+	background: url("../img/Pink-logo-2@1x--hvr.png") no-repeat scroll 0 0;
+}
+
+.page-header__logo-link:active {
 	background: url("../img/Pink-logo-2@1x.png") no-repeat scroll 0 0;
 }
 
@@ -1481,6 +1510,10 @@ body {
 	background: url("../img/map--700.jpg") no-repeat scroll 50% 50%;
 }
 
+.google-map:before {
+	height: 60px;
+}
+
 .research {
 	display: block;
 }
@@ -1505,10 +1538,13 @@ body {
 	font-size: 21px;
 }
 
+.page-header {
+	background: #12181e url("../img/header-bkg--1200.jpg") 50% 50% no-repeat;
+}
+
 .page-header__inner {
 	width: 1200px;
 	height: 850px;
-	background: url("../img/header-bkg--1200.jpg") 50% 50% no-repeat;
 }
 
 .page-header__menu {
@@ -1682,12 +1718,21 @@ body {
 
 .page-footer__logo-link {
 	margin: 77px 0;
+	background: url("../img/Pink-logo-footer-3@1x.png") no-repeat scroll 50% 50%;
+}
+
+.page-footer__logo-link:hover {
+	background: url("../img/Pink-logo-footer-3@1x--hvr.png") no-repeat scroll 50% 50%;
 }
 
 #map {
 	height: 525px;
 	margin: 0 auto;
 	background: url("../img/map--1200.jpg") no-repeat scroll 50% 50%;
+}
+
+.google-map:before {
+	height: 90px;
 }
 
 .slider-pagination {
@@ -1715,7 +1760,7 @@ body {
 
 .research__inner:after {
 	top: 66px;
-	left: 248px;
+	left: 155px;
 }
 
 .research__item {
@@ -1772,10 +1817,17 @@ body {
 
 @media (min-width: 1440px) {
 
+.page-header {
+	background: #12181e url("../img/header-bkg--1440.jpg") no-repeat 50% 50%;
+}
+
 .page-header__inner {
 	width: 1440px;
 	height: 855px;
-	background: url("../img/header-bkg--1440.jpg") 50% 50% no-repeat;
+}
+
+.page-header__menu {
+	width: 1440px;
 }
 
 .features__inner {
@@ -1794,20 +1846,14 @@ body {
 	width: 1440px;
 }
 
-.page-footer__logo-link {
-	width: 290px;
-	height: 80px;
-	background: url("../img/Pink-logo-footer-2@2x.png") no-repeat scroll 50% 50%;
-}
-
-.page-footer__logo-link:hover {
-	background: url("../img/Pink-logo-footer-2@2x--hvr.png") no-repeat scroll 50% 50%;
-}
-
 #map {
 	height: 525px;
 	margin: 0 auto;
 	background: url("../img/map--1440.jpg") no-repeat scroll 50% 50%;
+}
+
+.google-map:before {
+	height: 110px;
 }
 
 .research__inner {
