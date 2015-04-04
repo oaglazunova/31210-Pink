@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Pink</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -27,7 +27,7 @@
           <ul>
             <li>
               <a class="page-header__logo-link" href="#">PINK</a>
-              <a class="menu-toggler" id="toggler" href="#"><span></span></a>
+              <a class="menu-toggler" href="#"><span></span></a>
             </li>
             <li>
               <a class="main-nav__btn" href="#">Информация</a>
@@ -47,7 +47,6 @@
 
       </div>
       <div class="page-header__promo">
-        <span class="page-header__promo-text">Взгляните на жизнь иначе!</span>
         <div class="page-header__download">
           <span class="download__promo-text">Взгляните на жизнь иначе!</span>
           <a class="btn" href="#">Скачать приложение</a>
@@ -72,45 +71,23 @@
 
   <div class="page-content">
 
-
-
-    <div class="download">
-      <div class="download__inner">
-        <a class="btn" href="#">Скачать приложение</a>
-        <ul class="download__os-list">
-          <li>
-            <a class="logo-os  logo-os--apple" href="#">Скачать приложение для устройств Mac OS</a>
-          </li>
-          <li>
-            <a class="logo-os  logo-os--android" href="#">Скачать приложение для устройств Android</a>
-          </li>
-          <li>
-            <a class="logo-os  logo-os--windows" href="#">Скачать приложение для устройств Windows</a>
-          </li>
-        </ul>
-        <p class="download__options">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
-      </div>
-    </div>
-
-
-
     <div class="features">
       <div class="features__inner">
         <h1 class="features__h1">
-      <span class="features__slogan">Устали от серости мегаполиса?</span>
-      <span class="features__slogan">Нам есть, что вам<br>предложить!</span>
-      </h1>
+          <span class="features__slogan">Устали от серости мегаполиса?</span>
+          <span class="features__slogan">Нам есть, что вам<br>предложить!</span>
+        </h1>
         <div class="features__sections">
           <div class="features__container">
-            <section class="features__item  features__item--pivot">
+            <section class="features__item">
               <h2 class="features__h2">Поднимает настроение</h2>
               <p class="features__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
             </section>
-            <section class="features__item  features__item--pivot">
+            <section class="features__item">
               <h2 class="features__h2">Меняет мир вокруг</h2>
               <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
             </section>
-            <section class="features__item  features__item--pivot">
+            <section class="features__item">
               <h2 class="features__h2">Заводит новых друзей</h2>
               <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
@@ -134,19 +111,20 @@
       <div class="reviews__inner">
         <div class="reviews__slider">
           <section class="reviews__slide">
-            <h2 class="reviews__h2">Николай Петров</h2>
+            <div class="reviews__author">
+              <h2 class="reviews__h2">Николай Петров</h2>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
+            </div>
             <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-            <span class="reviews__name">Николай Петров</span>
-            <span class="reviews__info">25 лет, водитель трамвая</span>
           </section>
           <div class="slider-pagination">
-            <a class="slider-pagination__btn--active" href="#"></a>
-            <a class="slider-pagination__btn" href="#"></a>
-            <a class="slider-pagination__btn" href="#"></a>
+            <a class="slider-pagination__btn-active" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
           </div>
           <div class="slider-controls">
-            <a class="slider-controls__btn slider-controls__btn--left" href="#">Nazad</a>
-            <a class="slider-controls__btn slider-controls__btn--right" href="#">Vpered</a>
+            <a class="slider-controls__btn slider-controls__btn--left" href="#"></a>
+            <a class="slider-controls__btn slider-controls__btn--right" href="#"></a>
           </div>
         </div>
       </div>
@@ -180,62 +158,63 @@
                 <span class="tariffs__price">9,99 USD</span>
               </div>
             </td>
-            <tr class="tariffs__row-2">
-              <td class="tariffs__col-1">
-                <span class="package-option">Розовый фильтр</span>
-              </td>
-              <td class="tariffs__col-2">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-              <td class="tariffs__col-3">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-              <td class="tariffs__col-4">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-            </tr>
-            <tr class="tariffs__row-3">
-              <td class="tariffs__col-1">
-                <a class="package-option">Смайлики</a>
-              </td>
-              <td class="tariffs__col-2">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-no">Нет</span>
-              </td>
-              <td class="tariffs__col-3">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-              <td class="tariffs__col-4">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-            </tr>
-            <tr class="tariffs__row-4">
-              <td class="tariffs__col-1">
-                <a class="tariffs-option">Комментарии</a>
-              </td>
-              <td class="tariffs__col-2">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-no">Нет</span>
-              </td>
-              <td class="tariffs__col-3">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-              <td class="tariffs__col-4">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-yes">Есть</span>
-              </td>
-            </tr>
+          </tr>
+          <tr class="tariffs__row-2">
+            <td class="tariffs__col-1">
+              <span class="package-option">Розовый фильтр</span>
+            </td>
+            <td class="tariffs__col-2">
+              <span class="package-option--320">Розовый фильтр</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+            <td class="tariffs__col-3">
+              <span class="package-option--320">Розовый фильтр</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+            <td class="tariffs__col-4">
+              <span class="package-option--320">Розовый фильтр</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+          </tr>
+          <tr class="tariffs__row-3">
+            <td class="tariffs__col-1">
+              <a class="package-option">Смайлики</a>
+            </td>
+            <td class="tariffs__col-2">
+              <span class="package-option--320">Смайлики</span>
+              <span class="icon  icon-no">Нет</span>
+            </td>
+            <td class="tariffs__col-3">
+              <span class="package-option--320">Смайлики</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+            <td class="tariffs__col-4">
+              <span class="package-option--320">Смайлики</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+          </tr>
+          <tr class="tariffs__row-4">
+            <td class="tariffs__col-1">
+              <a class="tariffs-option">Комментарии</a>
+            </td>
+            <td class="tariffs__col-2">
+              <span class="package-option--320">Комментарии</span>
+              <span class="icon  icon-no">Нет</span>
+            </td>
+            <td class="tariffs__col-3">
+              <span class="package-option--320">Комментарии</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+            <td class="tariffs__col-4">
+              <span class="package-option--320">Комментарии</span>
+              <span class="icon  icon-yes">Есть</span>
+            </td>
+          </tr>
         </table>
         <div class="slider-pagination">
-          <a class="slider-pagination__btn" href="#"></a>
-          <a class="slider-pagination__btn--active" href="#"></a>
-          <a class="slider-pagination__btn" href="#"></a>
+          <a href="#"></a>
+          <a class="slider-pagination__btn-active" href="#"></a>
+          <a href="#"></a>
         </div>
 
       </div>
@@ -280,19 +259,10 @@
 
 
 
-  </div>
-
-  <!-- <script src="js/script.js"></script> -->
-
-  <script src="js/menu-toggler.js"></script>
-
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script src="js/google-map.js"></script>
+  </div> 
   
-  <script src="http://code.jquery.com/jquery.min.js">
-  </script>
-  <!--  <script src="js/main-navigation.js">
-  </script> -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

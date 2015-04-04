@@ -1,25 +1,23 @@
 .page-header {
-  background: #12181e;
+  background: @blue--header-bkg;
   &__inner {
     min-width: @screen--mobile;
-    height: 450px;
     margin: 0 auto;
     background: url("../img/header-bkg--320.jpg") 0 0 no-repeat;
-    background-position: center;
-    
+    background-position: top;
     @media(min-width: @screen--small) {
-      width: 700px;
+      width: @screen--small;
       height: 730px;
       margin: 0 auto;
       background: url("../img/header-bkg--700.jpg") no-repeat 50% 50%;
     }
     @media(min-width: @screen--medium) {
-      width: 1200px;
+      width: @screen--medium;
       height: 850px;
       background: url("../img/header-bkg--1200.jpg") 50% 50% no-repeat;
     }
     @media(min-width: @screen--big) {
-      width: 1440px;
+      width: @screen--big;
       height: 855px;
       background: url("../img/header-bkg--1440.jpg") 50% 50% no-repeat;
     }
@@ -31,12 +29,11 @@
     position: relative;
     align-items: center;
     background: rgba(0, 0, 0, .3);
-    
     @media(min-width: @screen--small) {
-      width: 700px;
+      width: @screen--small;
     }
     @media(min-width: @screen--medium) {
-      width: 1200px;
+      width: @screen--medium;
     }
   }
   &__logo-link {
@@ -46,7 +43,6 @@
     display: block;
     .hidden-text;
     background: url("../img/Pink-logo-1.png") no-repeat scroll 0 0;
-    
     @media(min-width: @screen--small) {
       width: 145px;
       height: 40px;
@@ -70,24 +66,11 @@
       padding: 80px 700px 0 120px;
     }
   }
-  &__promo-text {
-    padding: 20px 0;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    color: #fff;
-    font-size: @font-size--320-h1;
-    font-weight: @light;
-    
-    @media(min-width: @screen--small) {
-      display: none;
-    }
-  }
   &__download {
-    display: none;
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     @media(min-width: @screen--small) {
-      display: block;
       padding: 40px 0;
       margin: 0 auto;
       color: #fff;

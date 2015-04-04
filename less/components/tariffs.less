@@ -6,14 +6,14 @@
     margin: 0 auto;
     
     @media(min-width: @screen--small) {
-      width: 700px;
+      width: @screen--small;
       padding: 0 0 70px;
     }
     @media(min-width: @screen--medium) {
-      width: 1200px;
+      width: @screen--medium;
     }
     @media(min-width: @screen--big) {
-      width: 1440px;
+      width: @screen--big;
     }
     .slider-pagination {
       background: @grey;
@@ -160,10 +160,3 @@
   .hidden-text;
 }
 
-.icon-yes {
-  background: url("../img/yes.svg") no-repeat scroll 50% 50%;
-}
-
-.icon-no {
-  background: url("../img/no.svg") no-repeat scroll 50% 50%;
-}

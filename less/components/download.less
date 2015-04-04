@@ -1,25 +1,13 @@
 .download {
-  @media(min-width: @screen--small) {
-    display: none;
-  }
-  &__inner {
-    min-width: @screen--mobile;
-    padding: 40px 0;
-    margin: 0 auto;
-    background: @blue;
-    color: #fff;
-    text-align: center;
-  }
   &__promo-text {
     display: none;
     padding: 20px 0;
-    margin: 0 auto;
+    margin: 0 auto 370px;
     display: block;
     text-align: center;
     color: #fff;
     font-size: @font-size--320-h1;
     font-weight: @light;
-    
     @media(min-width: @screen--small) {
       margin: 0 auto;
       padding: 0 40px 40px;
@@ -33,10 +21,9 @@
   &__os-list {
     height: 120px;
     padding: 0;
-    margin: 10px 0 0;
-    list-style-type: none;
+    margin: 10px auto 0;
+    list-style: none;
     line-height: 120px;
-    
     li {
       width: 50px;
       margin: 0 30px 0 0;
@@ -46,7 +33,6 @@
     .logo-os {
       display: block;
       .hidden-text;
-      
       &--apple {
         height: 57px;
         background: url("../img/apple-logo.svg") no-repeat scroll 0 0;
@@ -61,14 +47,19 @@
       }
     }
   }
-  &__os-list li:last-child {
-    margin: 0;
+  &__os-list {
+    li {
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
   &__options {
-    padding: 0 40px;
-    margin: 0 auto auto;
+    padding: 0 40px 35px;
+    margin: 0 auto;
+    color: #fff;
     font-weight: @light;
-    
+    text-align: center;
     @media(min-width: @screen--small) {
       padding: 0;
       font-weight: @light;

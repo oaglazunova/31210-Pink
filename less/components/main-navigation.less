@@ -5,10 +5,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+  @media(min-width: @screen--mobile) {
+    display: none;
+  }
   @media(min-width: @screen--medium) {
-    position: static;
     width: 900px;
+    display: block;
+    position: static;
   }
   & ul {
     padding: 0;
@@ -17,7 +20,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
     @media(min-width: @screen--medium) {
       padding: 0;
       margin: 0;
@@ -31,15 +33,15 @@
       text-align: center;
       background: @blue;
       border-bottom: 1px solid #000;
-      
       @media(min-width: @screen--medium) {
         padding: 40px;
         background: none;
         border: none;
       }
       &:first-child {
-         @media(min-width: @screen--medium) {display: none;
-      }
+        @media(min-width: @screen--medium) {
+          display: none;
+        }
       }
     }
   }
@@ -51,7 +53,6 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    
     @media(min-width: @screen--medium) {
       padding: 20px 0 10px;
       text-transform: capitalize;
@@ -59,14 +60,12 @@
     &:active {
       color: @pink;
       opacity: .3;
-      
       @media(min-width: @screen--medium) {
         color: #fff;
       }
     }
     &:hover {
       color: @pink;
-      
       @media(min-width: @screen--medium) {
         color: #fff;
         border-bottom: 2px solid #fff;
@@ -82,7 +81,6 @@
   width: 50px;
   height: 25px;
   user-select: none;
-  
   @media(min-width: @screen--medium) {
     display: none;
   }
@@ -95,7 +93,6 @@
     border-radius: .5px;
     position: relative;
     transition: background .3s .5s;
-    
     &:before, &:after {
       width: 100%;
       height: 4px;
@@ -118,7 +115,6 @@
     > span {
       transition: background .3s 0;
       background: transparent;
-      
       &:before, &:after {
         transition: top .3s, transform .3s .5s;
         top: 0;

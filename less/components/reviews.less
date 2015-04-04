@@ -5,41 +5,59 @@
   }
   &__inner {
     min-width: @screen--mobile;
-    padding: 40px 0 70px;
+    padding: 90px 0 70px;
     margin: 0 auto;
     @media(min-width: @screen--small) {
-      width: 700px;
+      width: @screen--small;
       padding: 30px 0 100px;
     }
     @media(min-width: @screen--medium) {
-      width: 1200px;
+      width: @screen--medium;
       padding: 0 0 140px;
     }
     @media(min-width: @screen--big) {
-      width: 1440px;
+      width: @screen--big;
     }
   }
   &__slide {
     text-align: center;
+    position: relative;
+  }
+  &__author {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+     @media(min-width: @screen--small) {
+       
+    top: 120px;
+     }
+    @media(min-width: @screen--medium) {
+       
+    top: 270px;
+     }
   }
   &__h2 {
     margin: 0 auto 25px auto;
     font-size: @font-size--320-h2;
     color: #000;
-    font-family: @font;
+    font-family: @font-family;
     @media(min-width: @screen--small) {
-      display: none;
+      color: #000;
+      font-weight: bold;
+      font-size: @font-size--700-h3;
+      padding: 0 0 15px;
+      margin: 0 auto;
     }
   }
   &__text {
     margin: 0 2%;
     @media(min-width: @screen--small) {
       font-size: @font-size--320-h2;
-      padding: 0 0 30px;
+      padding: 0 0 120px;
     }
     @media(min-width: @screen--medium) {
       width: 680px;
-      padding: 40px 0;
+      padding: 40px 0 120px;
       margin: 0 auto;
     }
     &:before {
@@ -54,16 +72,6 @@
         background: url("../img/quotes.svg") no-repeat scroll 50% 50%;
         content: "";
       }
-    }
-  }
-  &__name {
-    display: none;
-    @media(min-width: @screen--small) {
-      display: block;
-      color: #000;
-      font-weight: bold;
-      font-size: @font-size--700-h3;
-      padding: 0 0 15px;
     }
   }
   &__info {
