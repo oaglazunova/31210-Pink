@@ -493,6 +493,10 @@ body {
 	background: rgba(0, 0, 0, 0.3);
 }
 
+.page-header__menu--blue {
+	background: #283645;
+}
+
 .page-header__logo-link {
 	width: 100px;
 	height: 24px;
@@ -1019,9 +1023,14 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-transform: translateY(-300px);
-	transform: translateY(-300px);
-	transition-duration: 1s;
+	-webkit-transform: translateY(-600px);
+	transform: translateY(-600px);
+	transition: .3s ease all;
+}
+
+.main-nav--vertical {
+	-webkit-transform: translateY(63px);
+	transform: translateY(63px);
 }
 
 .main-nav ul {
@@ -1052,7 +1061,11 @@ body {
 	align-items: center;
 	text-align: center;
 	background: #283645;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px ridge #000;
+}
+
+.main-nav ul li:first-child {
+	border-top: 2px ridge #000;
 }
 
 .main-nav__btn {
@@ -1101,6 +1114,14 @@ body {
 	transition: background .3s .5s;
 }
 
+.menu-toggler > span:hover {
+	background: #d22856;
+}
+
+.menu-toggler > span:active {
+	opacity: .3;
+}
+
 .menu-toggler > span:before,
 .menu-toggler > span:after {
 	width: 100%;
@@ -1114,6 +1135,16 @@ body {
 	transform-origin: 50% 50%;
 	transition: top .3s .6s, -webkit-transform .3s;
 	transition: top .3s .6s, transform .3s;
+}
+
+.menu-toggler > span:before:hover,
+.menu-toggler > span:after:hover {
+	background: #d22856;
+}
+
+.menu-toggler > span:before:active,
+.menu-toggler > span:after:active {
+	opacity: .3;
 }
 
 .menu-toggler > span:before {
@@ -1484,6 +1515,10 @@ body {
 	border: 2px solid #e9eaec;
 }
 
+.page-footer__icon:hover {
+	border: 2px solid #283645;
+}
+
 .page-footer__design {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1516,6 +1551,11 @@ body {
 
 .research {
 	display: block;
+}
+
+.main-nav--vertical {
+	-webkit-transform: translateY(120px);
+	transform: translateY(120px);
 }
 
 }
@@ -1775,6 +1815,8 @@ body {
 	width: 900px;
 	display: block;
 	position: static;
+	-webkit-transform: none;
+	transform: none;
 }
 
 .main-nav ul {
@@ -1789,10 +1831,6 @@ body {
 	padding: 40px;
 	background: none;
 	border: none;
-}
-
-.main-nav ul li:first-child {
-	display: none;
 }
 
 .main-nav__btn {

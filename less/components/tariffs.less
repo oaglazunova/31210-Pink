@@ -1,10 +1,8 @@
 .tariffs {
   background: @grey;
-  
   &__inner {
     min-width: @screen--mobile;
     margin: 0 auto;
-    
     @media(min-width: @screen--small) {
       width: @screen--small;
       padding: 0 0 70px;
@@ -17,7 +15,6 @@
     }
     .slider-pagination {
       background: @grey;
-      
       @media(min-width: @screen--small) {
         display: none;
       }
@@ -26,23 +23,19 @@
   &__table-wrap {
     overflow: hidden;
   }
-  
   &__table {
     margin: 0;
     border-collapse: collapse;
-    
     @media(min-width: @screen--small) {
       margin: 0 auto;
     }
   }
   &__table td {
     border: 2px solid (@grey - #0d0d0d);
-    
     background: #fff;
   }
   &__col-1 {
     display: none;
-    
     @media(min-width: @screen--small) {
       width: 153px;
       padding: 15px;
@@ -86,7 +79,6 @@
     margin: 0;
     width: 61px;
     height: 61px;
-    
     @media(min-width: @screen--medium) {
       width: 81px;
       height: 81px;
@@ -105,7 +97,6 @@
       font-weight: 600;
       transform: rotate(-45deg) translateX(-10px) translateY(-40px);
       transform-origin: 0 0;
-      
       @media(min-width: @screen--medium) {
         top: 80px;
         left: 10px;
@@ -132,7 +123,6 @@
     font-size: @font-size--320-h1;
     font-weight: @light;
     color: #fff;
-    
     @media(min-width: @screen--small) {
       font-size: @font-size--700-h4;
     }
@@ -144,13 +134,11 @@
 
 .package-option {
   display: none;
-  
   @media(min-width: @screen--small) {
     display: block;
   }
   &--320 {
     display: block;
-    
     @media(min-width: @screen--small) {
       display: none;
     }
@@ -164,4 +152,3 @@
   display: block;
   .hidden-text;
 }
-

@@ -1,14 +1,8 @@
 module.exports = function(grunt) {
 
-
-
   require('load-grunt-tasks')(grunt);
 
-
-
   grunt.initConfig({
-
-
 
     less: {
       style: {
@@ -18,7 +12,23 @@ module.exports = function(grunt) {
       }
     },
 
-
+	sprite:{
+      all: {
+        src: 'img/sprites-source/*.svg',
+        dest: 'img/spritesheet.svg',
+        destCss: 'img/sprites-source/sprites.css'
+      }
+    },
+	
+	csscomb: {
+        options: {
+            // Task-specific options go here. 
+        },
+        your_target: {
+            // Target-specific file lists and/or options go here. 
+			'css/style.css': ['css/style.css'],
+        },
+    },
 
     autoprefixer: {
       options: {
@@ -29,8 +39,6 @@ module.exports = function(grunt) {
       }
     },
 
-
-
     cmq: {
       style: {
         files: {
@@ -38,8 +46,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
-
 
     watch: {
       style: {
@@ -61,8 +67,6 @@ module.exports = function(grunt) {
 
   });
 
-
-
   grunt.registerTask('default', [
     'less',
     'autoprefixer',
@@ -70,7 +74,10 @@ module.exports = function(grunt) {
     'watch'
   ]);
 
-
+	// Load in `grunt-spritesmith`
+  grunt.loadNpmTasks('grunt-spritesmith');  
+  //Run the 'grunt sprite' task
+  grunt.loadNpmTasks('grunt-csscomb');
 
   grunt.registerTask('style', [
     'less',
