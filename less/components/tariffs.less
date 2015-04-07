@@ -3,6 +3,7 @@
   &__inner {
     min-width: @screen--mobile;
     margin: 0 auto;
+    position: relative;
     @media(min-width: @screen--small) {
       width: @screen--small;
       padding: 0 0 70px;
@@ -19,14 +20,20 @@
         display: none;
       }
     }
+    & input[type=radio] {
+      .slider-hide-radio;
+    }
   }
   &__table-wrap {
     overflow: hidden;
   }
   &__table {
+    min-width: 265%;
     margin: 0;
     border-collapse: collapse;
+    margin: 20px 0 70px 0;
     @media(min-width: @screen--small) {
+      min-width: 600px;
       margin: 0 auto;
     }
   }
@@ -70,6 +77,11 @@
   }
   &__buy {
     position: relative;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__ribbon {
     position: absolute;
@@ -130,6 +142,16 @@
       font-size: @font-size--1200-h3;
     }
   }
+  .icon {
+    width: 30px;
+    height: 26px;
+    margin: 15px 15%;
+    display: block;
+    .hidden-text;
+    @media(min-width: @screen--small) {
+      margin: auto;
+    }
+  }
 }
 
 .package-option {
@@ -139,16 +161,39 @@
   }
   &--320 {
     display: block;
+    padding: 0 0 0 15%;
     @media(min-width: @screen--small) {
       display: none;
     }
   }
 }
 
-.icon {
-  width: 30px;
-  height: 26px;
-  margin: auto;
-  display: block;
-  .hidden-text;
+.tariffs-paginator {
+  .slider-style;
+  bottom: 30px;
+  @media(min-width: @screen--small) {
+    display: none;
+  }
+  & label {
+    .slider-style__btn;
+  }
+}
+
+#btn-11:checked ~ .tariffs-paginator label[for="btn-11"],
+#btn-22:checked ~ .tariffs-paginator label[for="btn-22"],
+#btn-33:checked ~ .tariffs-paginator label[for="btn-33"] {
+  .slider-style__btn--active;
+}
+
+#btn-11:checked ~ .tariffs__table-wrap .tariffs__table {
+  transform: translateX(0);
+}
+
+#btn-22:checked ~ .tariffs__table-wrap .tariffs__table {
+  transform: translateX(-32%);
+  ;
+}
+
+#btn-33:checked ~ .tariffs__table-wrap .tariffs__table {
+  transform: translateX(-60%);
 }

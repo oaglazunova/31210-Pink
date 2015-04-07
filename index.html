@@ -17,28 +17,26 @@
         <a class="page-header__logo-link" href="#">PINK</a>
         <a id="toggler" class="menu-toggler" href="#"><span></span></a>
         <nav id="menu" class="main-nav">
-
           <ul>
             <li>
-              <a class="main-nav__btn" href="#">Информация</a>
+              <a class="main-nav__btn" href="#"><span>Информация</span></a>
             </li>
             <li>
-              <a class="main-nav__btn" href="#">Возможности</a>
+              <a class="main-nav__btn" href="#"><span>Возможности</span></a>
             </li>
             <li>
-              <a class="main-nav__btn" href="#">Отзывы</a>
+              <a class="main-nav__btn" href="#"><span>Отзывы</span></a>
             </li>
             <li>
-              <a class="main-nav__btn" href="#">Стоимость</a>
+              <a class="main-nav__btn" href="#"><span>Стоимость</span></a>
             </li>
           </ul>
-
         </nav>
-
       </div>
       <div class="page-header__promo">
         <div class="page-header__download">
           <span class="download__promo-text">Взгляните на жизнь иначе!</span>
+     
           <a class="btn" href="#">Скачать приложение</a>
           <ul class="download__os-list">
             <li>
@@ -52,6 +50,7 @@
             </li>
           </ul>
           <p class="download__options">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+          
         </div>
       </div>
     </div>
@@ -71,7 +70,7 @@
           <div class="features__container">
             <section class="features__item">
               <h2 class="features__h2">Поднимает настроение</h2>
-              <p class="features__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в&nbsp;несколько кликов!</p>
             </section>
             <section class="features__item">
               <h2 class="features__h2">Меняет мир вокруг</h2>
@@ -79,7 +78,7 @@
             </section>
             <section class="features__item">
               <h2 class="features__h2">Заводит новых друзей</h2>
-              <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых!</p>
             </section>
           </div>
         </div>
@@ -99,19 +98,47 @@
 
     <div class="reviews">
       <div class="reviews__inner">
+
+
+
         <div class="reviews__slider">
-          <section class="reviews__slide">
-            <div class="reviews__author">
-              <h2 class="reviews__h2">Николай Петров</h2>
-              <span class="reviews__info">25 лет, водитель трамвая</span>
-            </div>
-            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </section>
-          <div class="slider-pagination">
-            <a class="slider-pagination__btn-active" href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+
+        
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="reviews-paginator">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
+
+         
+          <div class="reviews__slides">
+
+            <section class="reviews__slide">
+              <div class="reviews__author">
+                <h2 class="reviews__h2">Николай Петров</h2>
+                <span class="reviews__info">25 лет, водитель трамвая</span>
+              </div>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            </section>
+            <section class="reviews__slide">
+              <div class="reviews__author">
+                <h2 class="reviews__h2">2 Николай Петров 2</h2>
+                <span class="reviews__info">2 25 лет, водитель трамвая 2</span>
+              </div>
+              <blockquote class="reviews__text">2 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» 2</blockquote>
+            </section>
+            <section class="reviews__slide">
+              <div class="reviews__author">
+                <h2 class="reviews__h2">33 Николай Петров 33</h2>
+                <span class="reviews__info">33 25 лет, водитель трамвая 33</span>
+              </div>
+              <blockquote class="reviews__text">33 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» 33</blockquote>
+            </section>
+          </div>
+         
           <div class="slider-controls">
             <a class="slider-controls__btn slider-controls__btn--left" href="#"></a>
             <a class="slider-controls__btn slider-controls__btn--right" href="#"></a>
@@ -124,7 +151,20 @@
 
     <div class="tariffs">
       <div class="tariffs__inner">
+       
+       <input type="radio" id="btn-11" name="toggled" checked>
+          <input type="radio" id="btn-22" name="toggled">
+          <input type="radio" id="btn-33" name="toggled">
+          <div class="tariffs-paginator">
+            <label for="btn-11"></label>
+            <label for="btn-22"></label>
+            <label for="btn-33"></label>
+          </div>
+          
         <div class="tariffs__table-wrap">
+         
+         
+          
           <table class="tariffs__table">
             <tr class="tariffs__row-1">
               <td class="tariffs__col-1">
@@ -155,16 +195,22 @@
                 <span class="package-option">Розовый фильтр</span>
               </td>
               <td class="tariffs__col-2">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Розовый фильтр</span>
+                  <span class="icon  icon-yes">Есть</span>
+                </div>
               </td>
               <td class="tariffs__col-3">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Розовый фильтр</span>
+                  <span class="icon  icon-yes">Есть</span>
+                </div>
               </td>
               <td class="tariffs__col-4">
-                <span class="package-option--320">Розовый фильтр</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Розовый фильтр</span>
+                  <span class="icon  icon-yes">Есть</span>
+                </div>
               </td>
             </tr>
             <tr class="tariffs__row-3">
@@ -172,16 +218,22 @@
                 <a class="package-option">Смайлики</a>
               </td>
               <td class="tariffs__col-2">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-no">Нет</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Смайлики</span>
+                  <span class="icon  icon-no">Нет</span>
+                </div>
               </td>
               <td class="tariffs__col-3">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Смайлики</span>
+                  <span class="icon  icon-yes">Есть</span>
+                </div>
               </td>
               <td class="tariffs__col-4">
-                <span class="package-option--320">Смайлики</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Смайлики</span>
+                  <span class="icon  icon-yes">Нет</span>
+                </div>
               </td>
             </tr>
             <tr class="tariffs__row-4">
@@ -189,25 +241,27 @@
                 <a class="tariffs-option">Комментарии</a>
               </td>
               <td class="tariffs__col-2">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-no">Нет</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Комментарии</span>
+                  <span class="icon  icon-no">Нет</span>
+                </div>
               </td>
               <td class="tariffs__col-3">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Комментарии</span>
+                  <span class="icon  icon-no">Нет</span>
+                </div>
               </td>
               <td class="tariffs__col-4">
-                <span class="package-option--320">Комментарии</span>
-                <span class="icon  icon-yes">Есть</span>
+                <div class="tariffs__wrap">
+                  <span class="package-option--320">Комментарии</span>
+                  <span class="icon  icon-yes">Есть</span>
+                </div>
               </td>
             </tr>
           </table>
         </div>
-        <div class="slider-pagination">
-          <a href="#"></a>
-          <a class="slider-pagination__btn-active" href="#"></a>
-          <a href="#"></a>
-        </div>
+        
 
       </div>
     </div>

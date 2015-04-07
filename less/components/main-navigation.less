@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   transform: translateY(-600px);
-  transition: .3s ease all;
+  transition: .5s ease-in-out;
   @media(min-width: @screen--medium) {
     width: 900px;
     display: block;
@@ -57,10 +57,22 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    border-bottom: 2px solid transparent;
     @media(min-width: @screen--medium) {
       padding: 20px 0 10px;
       text-transform: capitalize;
+    }
+    & span {
+      display: inline-block;
+      position: relative;
+      &:hover:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
     }
     &:active {
       color: @pink;
@@ -73,7 +85,6 @@
       color: @pink;
       @media(min-width: @screen--medium) {
         color: #fff;
-        border-bottom: 2px solid #fff;
       }
     }
   }
@@ -81,11 +92,15 @@
 /* Menu Toggler ------------------ */
 
 .menu-toggler {
-  display: block;
-  align-items: center;
   width: 50px;
   height: 25px;
+  margin: 16px 0 21px;
+  display: block;
+  align-items: center;
   user-select: none;
+  @media(min-width: @screen--small) {
+    margin: 22px 0 22px;
+  }
   @media(min-width: @screen--medium) {
     display: none;
   }
@@ -98,14 +113,7 @@
     border-radius: .5px;
     position: relative;
     transition: background .3s .5s;
-    &:hover {
-      background: @pink;
-    }
-    &:active {
-      opacity: .3;
-    }
-    &:before,
-    &:after {
+    &:before, &:after {
       width: 100%;
       height: 4px;
       background: #fff;
@@ -115,12 +123,6 @@
       content: '';
       transform-origin: 50% 50%;
       transition: top .3s .6s, transform .3s;
-      &:hover {
-        background: @pink;
-      }
-      &:active {
-        opacity: .3;
-      }
     }
     &:before {
       top: 10px;

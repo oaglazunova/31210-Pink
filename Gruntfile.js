@@ -12,24 +12,6 @@ module.exports = function(grunt) {
       }
     },
 
-	sprite:{
-      all: {
-        src: 'img/sprites-source/*.svg',
-        dest: 'img/spritesheet.svg',
-        destCss: 'img/sprites-source/sprites.css'
-      }
-    },
-	
-	csscomb: {
-        options: {
-            // Task-specific options go here. 
-        },
-        your_target: {
-            // Target-specific file lists and/or options go here. 
-			'css/style.css': ['css/style.css'],
-        },
-    },
-
     autoprefixer: {
       options: {
         browsers: ['last 2 versions']
@@ -73,11 +55,6 @@ module.exports = function(grunt) {
     'cmq',
     'watch'
   ]);
-
-	// Load in `grunt-spritesmith`
-  grunt.loadNpmTasks('grunt-spritesmith');  
-  //Run the 'grunt sprite' task
-  grunt.loadNpmTasks('grunt-csscomb');
 
   grunt.registerTask('style', [
     'less',
