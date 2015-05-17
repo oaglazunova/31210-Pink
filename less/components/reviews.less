@@ -1,4 +1,15 @@
 .reviews {
+  background: linear-gradient(-5deg, @grey 15%, #fff 15%);
+  background-size: 100% 100%;
+   @media(min-width: @screen--small) {
+     background: url("../img/diagonal-bkg.svg") no-repeat 0 350px;
+     background-size: 150% 100%;
+   }
+  @media(min-width: @screen--medium) {
+     background: url("../img/diagonal-bkg.svg") no-repeat 0 400px;
+     background-size: 100% 100%;
+  }
+  /*
   background-image: linear-gradient(-5deg, @grey 42%, #fff 42%);
   background-size: 500% 100%;
   
@@ -12,7 +23,8 @@
   }
   @media(min-width: @screen--big) {
     background-image: linear-gradient(-5deg, @grey 35%, #fff 35%);
-  }
+  */
+  
   
   &__inner {
     min-width: @screen--mobile;

@@ -629,7 +629,7 @@ body {
 }
 
 .features {
-	background-image: linear-gradient(-5deg, #f2f2f2 77%, #ffffff 77%);
+	background: url("../img/diagonal-bkg.svg") no-repeat 0 130px;
 	background-size: 200% 100%;
 }
 
@@ -702,8 +702,22 @@ body {
 }
 
 .reviews {
-	background-image: linear-gradient(-5deg, #f2f2f2 42%, #ffffff 42%);
-	background-size: 500% 100%;
+	background: linear-gradient(-5deg, #f2f2f2 15%, #ffffff 15%);
+	background-size: 100% 100%; /*
+  background-image: linear-gradient(-5deg, @grey 42%, #fff 42%);
+  background-size: 500% 100%;
+  
+  @media(min-width: @screen--small) {
+    background-image: linear-gradient(-5deg, @grey 33%, #fff 33%);
+    background-size: 2000px 100%;
+  }
+  @media(min-width: @screen--medium) {
+    background-image: linear-gradient(-5deg, @grey 40%, #fff 40%);
+    background-size: 3000px 100%;
+  }
+  @media(min-width: @screen--big) {
+    background-image: linear-gradient(-5deg, @grey 35%, #fff 35%);
+  */
 }
 
 .reviews__inner {
@@ -1516,8 +1530,8 @@ body {
 }
 
 .features {
-	background-image: linear-gradient(-5deg, #f2f2f2 73%, #ffffff 73%);
-	background-size: 2000px 100%;
+	background: url("../img/diagonal-bkg.svg") no-repeat 0 180px;
+	background-size: 150% 100%;
 }
 
 .features__inner {
@@ -1586,8 +1600,8 @@ body {
 }
 
 .reviews {
-	background-image: linear-gradient(-5deg, #f2f2f2 33%, #ffffff 33%);
-	background-size: 2000px 100%;
+	background: url("../img/diagonal-bkg.svg") no-repeat 0 350px;
+	background-size: 150% 100%;
 }
 
 .reviews__inner {
@@ -1862,8 +1876,8 @@ body {
 }
 
 .features {
-	background-image: linear-gradient(-5deg, #f2f2f2 65%, #ffffff 65%);
-	background-size: 3000px 100%;
+	background: url("../img/diagonal-bkg.svg") no-repeat 0 240px;
+	background-size: 100% 100%;
 }
 
 .features__inner {
@@ -1943,8 +1957,8 @@ body {
 }
 
 .reviews {
-	background-image: linear-gradient(-5deg, #f2f2f2 40%, #ffffff 40%);
-	background-size: 3000px 100%;
+	background: url("../img/diagonal-bkg.svg") no-repeat 0 400px;
+	background-size: 100% 100%;
 }
 
 .reviews__inner {
@@ -2073,7 +2087,7 @@ input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
 .research__inner {
 	width: 1200px;
 	background: #f2f2f2;
-	padding: 0 0 70px;
+	padding: 60px 0 70px;
 }
 
 .research__inner:before {
@@ -2081,7 +2095,7 @@ input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
 }
 
 .research__inner:after {
-	top: 66px;
+	top: 126px;
 	left: 195px;
 }
 
@@ -2153,10 +2167,6 @@ input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
 	width: 1440px;
 }
 
-.reviews {
-	background-image: linear-gradient(-5deg, #f2f2f2 35%, #ffffff 35%);
-}
-
 .reviews__inner {
 	width: 1440px;
 }
@@ -2185,7 +2195,7 @@ input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
 
 .research__inner {
 	width: 1440px;
-	padding: 0 80px 70px;
+	padding: 60px 80px 70px;
 }
 
 .research__inner:before {
