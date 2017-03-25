@@ -1,6 +1,6 @@
 # Проект «Pink»
 
-* Студент: [Ольга Глазунова](https://htmlacademy.ru/profile/id31210).
+* Студент: [Бажанов Евгений](https://htmlacademy.ru/profile/therealeugen).
 * Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 --
